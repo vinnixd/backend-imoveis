@@ -8,8 +8,8 @@ app.use(express.json());
 
 app.use("/api/imoveis", imoveisRoutes);
 
+// Aqui é o ponto chave 👇
 const PORT = process.env.PORT;
-
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
 });
